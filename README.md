@@ -1,11 +1,11 @@
-# 🧠 Shared Whiteboard (USP Mini Project)
+# Shared Whiteboard (USP Mini Project)
 
 An **interactive terminal-based whiteboard** developed in **C** using **System V IPC (Shared Memory & Semaphores)**.  
 This project demonstrates core Unix System Programming concepts such as **process creation, inter-process communication, synchronization, and signal handling**.
 
 ---
 
-## 🧩 Overview
+## Overview
 
 The project consists of two programs:
 - **controller.c** → Creates and manages the shared memory whiteboard, semaphore, and viewer process.
@@ -15,7 +15,7 @@ Each user process communicates with the controller via **shared memory**, and **
 
 ---
 
-## 🎯 Features
+## Features
 
 - Real-time multi-user text and line drawing on a shared whiteboard.
 - Process synchronization using **System V semaphores**.
@@ -25,7 +25,7 @@ Each user process communicates with the controller via **shared memory**, and **
 
 ---
 
-## ⚙️ System Calls Used
+## System Calls Used
 
 | Concept | System Calls |
 |----------|---------------|
@@ -37,7 +37,7 @@ Each user process communicates with the controller via **shared memory**, and **
 
 ---
 
-## 🧠 Concepts Demonstrated
+## Concepts Demonstrated
 
 - **Process Management:** Creating and managing multiple processes (`controller`, `viewer`, `user`).
 - **Inter-Process Communication:** Shared memory segment for real-time board updates.
@@ -47,22 +47,22 @@ Each user process communicates with the controller via **shared memory**, and **
 
 ---
 
-## ⚙️ System Requirements
+## System Requirements
 
 This project uses **System V IPC**, which is supported only on **UNIX/Linux systems**.
 
-> ⚠️ **Note:**  
+> **Note:**  
 > The code will **not compile or run on Windows**, because headers like  
 > `<sys/ipc.h>`, `<sys/shm.h>`, and `<sys/sem.h>` are Linux-specific.
 
-### ✅ Recommended Setup
+### Recommended Setup
 - **OS:** Ubuntu 20.04 / 22.04 / any Linux distro  
 - **Compiler:** GCC  
 - **Terminal:** GNOME Terminal / VMware Ubuntu / WSL (Windows Subsystem for Linux)
 
 ---
 
-## 🚀 How to Compile and Run
+## How to Compile and Run
 
 1. **Clone this repository:**
    ```bash
@@ -109,7 +109,7 @@ This project uses **System V IPC**, which is supported only on **UNIX/Linux syst
 
 ---
 
-## 🧱 Example Output (ASCII Preview)
+## Example Output (ASCII Preview)
 
 ```
 ........................................
@@ -125,7 +125,7 @@ This project uses **System V IPC**, which is supported only on **UNIX/Linux syst
 
 ---
 
-## 🧾 Future Enhancements
+## Future Enhancements
 
 * Add “fill” tool for region coloring.
 * Add “box” or “circle” drawing shortcuts.
